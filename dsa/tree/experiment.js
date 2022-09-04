@@ -51,6 +51,8 @@ function lowestCommonAncestor() {}
 
 function convertSortedArrayToBST() {}
 
-function converSortedListToBST() {}
+function convertSortedListToBST() {}
 
 function subtreeOfAnotherTree() {}
+
+function countLeafNodes() {}
