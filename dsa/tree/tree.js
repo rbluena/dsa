@@ -100,17 +100,4 @@ function breadthFirstSearch(root) {
   return results;
 }
 
-function recursiveBreadthFirstSearch(root) {
-  const current = root;
-
-  if (current?.val) {
-    results.push(current?.val);
-  }
-
-  if (current?.left) recursiveBreadthFirstSearch(current.left);
-  if (current?.right) recursiveBreadthFirstSearch(current.right);
-
-  return results;
-}
-
 logger(breadthFirstSearch(a));
