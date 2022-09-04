@@ -44,3 +44,45 @@ const graph = {
 };
 
 print(breadthFirstSearch(graph, "a"));
+
+/**
+ * UNDIRECTED GRAPH
+ */
+
+/**
+ * Converting undirected graph to Adjacency list
+ */
+function buildAdjacentGraph(edges) {
+  const graph = {};
+
+  for (const vertecies of edges) {
+    const [current, naighbor] = vertecies;
+
+    if (!(current in graph)) graph[current] = [];
+    if (!(naighbor in graph)) graph[naighbor] = [];
+
+    graph[current].push(naighbor);
+    graph[neighbor].push(current);
+  }
+}
+
+/**
+ * Checking if a source and destination are connected inside
+ * an undirected graph.
+ *
+ * @param {Array} edges
+ * @param {String} src
+ * @param {String} dest
+ * @returns {Boolean}
+ */
+function undirectedGraphTraverse(edges, src, dest) {
+  const graph = buildAdjacentGraph(edges);
+  const visited = new Set();
+
+  return explore(graph, src, dest, visited);
+}
+
+function explore(graph, src, dest, visited) {
+  if (src === dest) return true;
+  if (visited.has(src)) return false;
+}
