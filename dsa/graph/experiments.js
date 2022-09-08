@@ -11,3 +11,12 @@ function hasPath(graph, src, dest) {
 function connectedComponentsCount() {}
 
 function courseSchedule() {}
+
+function cloningGraph() {}
+
+function numberOfIsland(grid) {}
+
+/**
+ *
+ */
+function numberOfClosedIsland(grid) {}
