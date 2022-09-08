@@ -9,3 +9,5 @@ function hasPath(graph, src, dest) {
 }
 
 function connectedComponentsCount() {}
+
+function courseSchedule() {}

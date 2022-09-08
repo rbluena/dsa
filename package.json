@@ -1,4 +1,6 @@
 {
+  "name": "data-structures-and-algorithms",
+  "type": "module",
   "devDependencies": {
     "typescript": "^4.8.2"
   }
